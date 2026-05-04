@@ -7,22 +7,22 @@ export default defineEventHandler(async () => {
   const supabase = createClient(
     config.public.supabaseUrl,
     config.supabaseKey
+
   )
 
 const ZOTERO_API_KEY = config.zoteroApiKey
-const ZOTERO_USER_ID = config.zoteroUserId
+const ZOTERO_GROUP_ID = config.zoteroGroupId
 
   try {
     // Daten von Zotero holen
     const res = await fetch(
-      `https://api.zotero.org/users/20374578/items?limit=100`,
+      `https://api.zotero.org/groups/6538938/items?limit=2`,
       {
         headers: {
           'Zotero-API-Key': ZOTERO_API_KEY
         }
       }
     )
-    
 
     const raw = await res.json()
 
