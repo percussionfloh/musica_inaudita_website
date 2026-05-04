@@ -13,6 +13,13 @@ export default defineNuxtConfig({
     css: ['~/assets/main.css'],
     supabase: {
         redirect: false,
-    }
-
+    },
+    i18n: {
+        strategy: 'prefix_except_default',
+        locales: [
+            { code: 'de', language: 'de-DE', file: 'de.yaml', dir: 'ltr' },
+        ],
+        defaultLocale: 'de',
+        langDir: 'locales/',
+    },
 });
