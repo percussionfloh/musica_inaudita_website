@@ -6,6 +6,10 @@ const items = [
     [{
         label: t('start'),
         to: localePath({name: 'index'}),
+    },
+    {
+        label: t('item'),
+        to: localePath ({name: 'item'}),
     }
 ]];
 </script>
