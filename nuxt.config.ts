@@ -4,7 +4,7 @@ export default defineNuxtConfig({
       runtimeConfig: {
         supabaseKey: process.env.SUPABASE_KEY,
         zoteroApiKey: process.env.ZOTERO_API_KEY,
-        zoteroUserId: process.env.ZOTERO_USER_ID,
+        zoteroGroupId: process.env.ZOTERO_GROUP_ID,
         public: {
             supabaseUrl: process.env.SUPABASE_URL
         }
