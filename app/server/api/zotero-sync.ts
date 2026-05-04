@@ -49,7 +49,7 @@ const ZOTERO_USER_ID = config.zoteroUserId
 
     // Upsert in Supabase
     const { error } = await supabase
-      .from('citations')
+      .from('mi_database')
       .upsert(transformed, { onConflict: 'id' })
 
     if (error) {
