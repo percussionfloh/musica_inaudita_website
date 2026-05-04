@@ -9,7 +9,7 @@ export default defineEventHandler(async () => {
   )
 
   const { data, error } = await supabase
-    .from('citations')
+    .from('mi_database')
     .select('*')
 
   if (error) {
