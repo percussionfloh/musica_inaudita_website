@@ -8,8 +8,20 @@ const items = [
         to: localePath({name: 'index'}),
     },
     {
-        label: t('item'),
-        to: localePath ({name: 'item'}),
+        label: t('team'),
+        to: localePath ({name: 'team'}),
+    },
+    {
+        label: t('philosophy'),
+        to: localePath ({name: 'philosophy'}),
+    }],
+    [{
+        label: t('participate'),
+        to: localePath ({name: 'participate'}),
+    },
+    {
+        label: t('contact'),
+        to: localePath ({name: 'contact'}),
     }
 ]];
 </script>
