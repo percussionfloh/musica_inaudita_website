@@ -31,7 +31,7 @@ onMounted(async () => {
 
 <template >
   <UContainer class="grid gap-12 grid-rows-2 items-center">
-      <div class="grid grid-rows-2 items-center m-6">
+      <div class="grid items-center m-6">
           <div>
             <dl>
               <dt class="font-bold">Titel</dt>
@@ -55,6 +55,5 @@ onMounted(async () => {
             </dl>
           </div>
       </div>
-      <div class="bg-red-600">gh</div>
   </UContainer>
 </template>
