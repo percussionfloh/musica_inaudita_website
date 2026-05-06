@@ -12,6 +12,10 @@ const items = [
         to: localePath ({name: 'team'}),
     },
     {
+        label: t('database'),
+        to: localePath ({name: 'database'}),
+    },
+    {
         label: t('philosophy'),
         to: localePath ({name: 'philosophy'}),
     }],
