@@ -34,7 +34,7 @@ jobs:
                 run: npm ci
             -
                 name: Static HTML export with Nuxt
-                run: NUXT_APP_BASE_URL=/satzmodelle-tool/ npm run generate
+                run: NUXT_APP_BASE_URL=/musica_inaudita_website/ npm run generate
             -
                 name: Upload artifact
                 uses: actions/upload-pages-artifact@v3
