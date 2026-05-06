@@ -27,7 +27,7 @@ const columns = [
                 <template #right>
                         <div>
                             <div class="flex justify-end">
-                                <img src="../assets/mi.png" class="max-h-47.5" alt="Lückenfüller" />
+                                <img src="../assets/mi.png" class="max-h-47.5" alt="Bild" />
                             </div>
                         </div>
                     </template>
