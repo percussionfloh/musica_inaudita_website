@@ -9,8 +9,13 @@ export default defineNuxtConfig({
             supabaseUrl: process.env.SUPABASE_URL
         }
     },
-    modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/supabase', '@nuxtjs/i18n'],
+    modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/supabase', '@nuxtjs/i18n', '@nuxt/scripts'],
     css: ['~/assets/main.css'],
+    scripts: {
+        registry: {
+            instagramEmbed: {}
+        }
+    },
     supabase: {
         redirect: false,
     },
