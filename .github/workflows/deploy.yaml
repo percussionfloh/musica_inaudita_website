@@ -36,7 +36,9 @@ jobs:
                 name: Static HTML export with Nuxt
                 env: 
                     NUXT_APP_BASE_URL: /musica_inaudita_website/
-                    NUXT_SUPABASE_URL: ${{ secrets.NUXT_SUPABASE_URL }}
+                    NUXT_SUPABASE_URL: https://ixirnwdepzvhmbuvqxld.supabase.co
+                    NUXT_SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
                 run: npm run generate
             -
                 name: Upload artifact
