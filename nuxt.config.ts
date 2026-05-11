@@ -11,11 +11,11 @@ export default defineNuxtConfig({
     },
     modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/supabase', '@nuxtjs/i18n', '@nuxt/scripts'],
     css: ['~/assets/main.css'],
-    scripts: {
-        registry: {
-            instagramEmbed: {}
-        }
-    },
+    // scripts: {
+    //     registry: {
+    //         instagramEmbed: {}
+    //     }
+    // },
     supabase: {
         redirect: false,
     },
