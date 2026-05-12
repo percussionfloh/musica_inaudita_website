@@ -12,7 +12,7 @@ useHead({
         <UApp :locale="de">
             <div class="flex flex-col min-h-screen">
                 <TheHeader />
-                <TheNavigation />
+                <!-- <TheNavigation /> -->
                 <main class="py-8">
                     <slot></slot>
                 </main>
