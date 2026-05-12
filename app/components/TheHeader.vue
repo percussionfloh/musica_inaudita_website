@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 const localePath = useLocalePath()
 </script>
 
@@ -25,49 +25,53 @@ const localePath = useLocalePath()
             </div>
         </div>
     </header>
-</template>
-<!-- 
-<script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+</template> -->
+
+<script setup>
+
+const { t } = useI18n();
+const localePath = useLocalePath();
 
 const route = useRoute()
 
-const items = computed<NavigationMenuItem[]>(() => [
-  {
-    label: 'Philosphys',
-    to: '/philosophy',
-    icon: 'i-lucide-book-open',
-    active: route.path.startsWith('/philosophy')
-  },
-  {
-    label: 'Components',
-    to: '/docs/components',
-    active: route.path.startsWith('/docs/components')
-  },
-  {
-    label: 'Figma',
-    to: 'https://go.nuxt.com/figma-ui',
-    target: '_blank'
-  },
-  {
-    label: 'Releases',
-    to: 'https://github.com/nuxt/ui/releases',
-    target: '_blank'
-  }
-])
+const items = [
+    [{
+        label: t('start'),
+        icon: '',
+        to: localePath({name: 'index'}),
+    },
+    {
+        label: t('team'),
+        to: localePath ({name: 'team'}),
+    },
+    {
+        label: t('database'),
+        to: localePath ({name: 'database'}),
+    },
+    {
+        label: t('philosophy'),
+        to: localePath ({name: 'philosophy'}),
+    }],
+    [{
+        label: t('participate'),
+        to: localePath ({name: 'participate'}),
+    },
+    {
+        label: t('contact'),
+        to: localePath ({name: 'contact'}),
+    }
+]];
 </script>
 
 <template>
   <UHeader mode="slideover">
     <template #title>
-      <Logo class="h-6 w-auto" />
+      <p class="xl:text-4xl md:text-2xl"> Musica Inaudita </p>
     </template>
 
     <UNavigationMenu :items="items" />
 
     <template #right>
-      <UColorModeButton />
-
       <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
         <UButton
           color="neutral"
@@ -85,4 +89,4 @@ const items = computed<NavigationMenuItem[]>(() => [
     </template>
   </UHeader>
 </template>
- -->
+
