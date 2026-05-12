@@ -64,7 +64,7 @@ const items = [
 </script>
 
 <template>
-  <UHeader mode="slideover">
+  <UHeader class="bg-color: bg-fuchsia-300" mode="slideover">
     <template #title>
       <p class="xl:text-4xl md:text-2xl"> Musica Inaudita </p>
     </template>
@@ -72,14 +72,14 @@ const items = [
     <UNavigationMenu :items="items" />
 
     <template #right>
-      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
+      <UTooltip text="Instagram" :kbds="['meta', 'G']">
         <UButton
-          color="neutral"
+          color="white"
           variant="ghost"
-          to="https://github.com/nuxt/ui"
+          to="https://instagram.com/musica_inaudita"
           target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
+          icon="i-simple-icons-instagram"
+          aria-label="Instagram"
         />
       </UTooltip>
     </template>
