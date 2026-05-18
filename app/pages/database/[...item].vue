@@ -4,6 +4,8 @@ definePageMeta({
     layout: 'item',
 });
 
+const route = useRoute()
+
 const client = useSupabaseClient()
 const databases = ref([])
 const localePath = useLocalePath()
@@ -35,6 +37,7 @@ onMounted(async () => {
 
 <template >
   <UContainer class="grid gap-12 grid-rows-2 items-center">
+    <pre v-text="route"></pre>
       <div class="grid grid-rows-2 items-center m-6">
           <div>
             <dl>
