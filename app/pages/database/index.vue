@@ -40,7 +40,7 @@ onMounted(async () => {
         <div class="bg-amber-300 mx-3">
             <UInput placeholder="Search..." />
         </div>
-        <div class="grid cols-3">
+        <div class="grid cols-3 gap-2">
             <UCheckbox label="Noten" default-value />
             <UCheckbox label="Paper" default-value />
             <UCheckbox label="Buch" default-value />
@@ -48,8 +48,8 @@ onMounted(async () => {
         <div>
             <USelect v-model="value" multiple :items="items" class="w-48" />
         </div>
-        <div>
-            <UButton v-for="database in databases" :to="`database/${database.data.data.key}`" :key="database.key"> {{ database.data.key }}, {{ database.data.data.title }}</UButton>
+        <div class="grid grid-cols-3 gap-3">
+            <UButton color="neutral" v-for="database in databases" :to="`database/${database.data.data.key}`" :key="database.key">{{ formatCreators(database.data.data?.creators) }}:  {{ database.data.data.title }}</UButton>
         </div>
     </div>
 
