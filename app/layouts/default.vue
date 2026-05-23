@@ -1,11 +1,17 @@
 <script setup>
-import { de } from '@nuxt/ui/locale';
+import { de } from '@nuxt/ui/locale'
+import logo from '~/assets/logo_transparent.png'
 
 useHead({
-    titleTemplate: (titleChunk) => {
-        return titleChunk ? `${titleChunk} | Musica Inaudita` : 'Musica Inaudita';
-    },
-});
+  title: 'Musica Inaudita',
+  link: [
+    {
+      rel: 'icon',
+      type: '../assets/logo_small_lila.png',
+      href: logo
+    }
+  ]
+})
 </script>
 
 <template>
