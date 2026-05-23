@@ -21,13 +21,10 @@ const {
       throw error
     }
 
-    console.log(data)
-
     return data
   }
 )
 
-console.log(paper)
 </script>
 
 <template>
