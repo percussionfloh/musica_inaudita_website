@@ -1,6 +1,6 @@
 <script setup>
 import { de } from '@nuxt/ui/locale'
-import logo from '~/assets/logo_transparent.png'
+import logo from '~/assets/logo_small_lila.png'
 
 useHead({
   title: 'Musica Inaudita',
