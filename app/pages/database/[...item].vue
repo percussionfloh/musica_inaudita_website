@@ -59,7 +59,7 @@ const {
       <div class="bg-amber-300">
         Platzhalter oben mitte
       </div>
-      <div class=" bg-amber-500">
+      <div class=" bg-amber-400">
         <dl>
           <dt class="font-bold">Titel</dt>
           <dd>{{ paper.data.data.title }}</dd>
