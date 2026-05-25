@@ -6,7 +6,9 @@ export default defineNuxtConfig({
         zoteroApiKey: process.env.ZOTERO_API_KEY,
         zoteroGroupId: process.env.ZOTERO_GROUP_ID,
         public: {
-            supabaseUrl: process.env.SUPABASE_URL
+            supabaseUrl: process.env.SUPABASE_URL,
+            url: process.env.NUXT_PUBLIC_SUPABASE_URL,
+            key: process.env.NUXT_PUBLIC_SUPABASE_KEY
         }
     },
     modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/supabase', '@nuxtjs/i18n', '@nuxt/scripts'],
